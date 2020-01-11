@@ -1,5 +1,5 @@
 BINARY := baelfire
-VERSION := $(shell git describe --always --long)
+VERSION := $(shell git describe --abbrev=0 --tags)
 
 .PHONY: vendor
 vendor:

@@ -6,4 +6,4 @@ RUN make build
 FROM debian:buster-slim
 WORKDIR /root/
 COPY --from=build-stage app/baelfire .
-CMD [ "./baelfire" ]
+ENTRYPOINT [ "./baelfire" ]
