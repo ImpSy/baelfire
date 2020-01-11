@@ -9,6 +9,17 @@
   </p>
 </p>
 
+## Install
+
+Currently Baelfire is only available on [dockerhub](https://hub.docker.com/r/impsy/baelfire)
+
+You can launch a Baelfire container for trying it out with
+```
+$ docker run --name baelfire -d -p 127.0.0.1:1323:1323 impsy/baelfire:v0.1.0
+```
+Baelfire will now be reachable at http://localhost:1323/.
+
+
 ## Projects supported (aka targets)
 - Alertmanager
 - Baelfire (self)
