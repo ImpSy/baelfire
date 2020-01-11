@@ -1,5 +1,10 @@
 version: "2.3"
 services:
+  baelfire:
+    build:
+      context: .
+    ports:
+      - '1323:1323'
   alertmanager:
     image: prom/alertmanager
     ports:

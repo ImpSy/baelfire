@@ -10,3 +10,7 @@ build:
 
 run: build
 	./${BINARY}
+
+release:
+	docker build -t impsy/baelfire:${VERSION} .
+	docker push impsy/baelfire:${VERSION}
