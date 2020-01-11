@@ -1,0 +1,18 @@
+version: "2.3"
+services:
+  alertmanager:
+    image: prom/alertmanager
+    ports:
+      - '9093:9093'
+  grafana:
+    image: grafana/grafana
+    ports:
+      - '3000:3000'
+  metabase:
+    image: metabase/metabase
+    ports:
+      - '3001:3000'
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - '9090:9090'
